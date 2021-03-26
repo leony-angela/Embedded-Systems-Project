@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>GPIO26</h1>
+    <label class="button1">
+      <span class="slider1"></span>
+    </label>
+    <h1>GPIO26</h1>
+    <label class="button2">
+      <span class="slider2"></span>
+    </label>
+    <style>
+    body {
+      background: linear-gradient(-45deg, #ebebbc, #e0d3ed);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {background-position: 0% 50%;
+        }50% {background-position: 100% 50%;
+        }100% {background-position: 0% 50%;}
+    }
+
+    h1 { 
+       color: #36454F; 
+       font-family: Helvetica Neue,sans-serif;
+       font-size: 45px; 
+       font-weight: 800; 
+       line-height: 72px; 
+       margin: 0 0 12px;
+       text-align: center; 
+       text-transform: uppercase; 
+    }
+
+    h3 { 
+        color: #71797E; 
+        font-family: oswald,sans-serif; 
+        font-size: 30px; 
+        font-weight: 500; 
+        line-height: 32px; 
+        text-align: center;
+        margin: 12px 0 12px;
+        text-transform: uppercase; 
+    }
+
+    .button1 input {opacity: 0;width: 0;height: 0;}
+    .button2 input {opacity: 0;width: 0;height: 0;}
+
+    .button1 {
+        position: relative;
+        display: inline-block;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.30);
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #93C572, #9bb4c2);
+        border-radius: 34px;
+    }
+
+    .button2 {
+        position: relative;
+        display: inline-block;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.30);
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #40826D, #356c87);
+        border-radius: 34px;
+    }
+
+    .slider1 {
+        position: absolute;content: "";
+        height: 40px;
+        width: 40px;
+        left: 5px;
+        bottom: 5px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    .slider2 {
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        left: 55px;
+        bottom: 5px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    </style>
+  </body>
+</html>
