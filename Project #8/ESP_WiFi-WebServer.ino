@@ -1,8 +1,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "Aigoo";
-const char* password = "Opaopa123";
+const char* ssid = "REPLACE_WITH_SSID"; /*CHANGE*/
+const char* password = "REPLACE_WITH_PASSWORD"; /*CHANGE*/
 
 WiFiServer server(80); // Set web server port number to 80
 String header; // store the HTTP request
@@ -98,7 +98,6 @@ void loop(){
             client.println(".button4 {position: relative;display: inline-block;box-shadow: 0 .5rem 1rem rgba(0,0,0,.30);cursor: pointer;width: 100px;height: 50px;top: 0;left: 0;right: 0;bottom: 0;background-image: linear-gradient(to right, #CD5C5C, #981d61);border-radius: 34px;}");
             client.println(".slider1 {position: absolute;content: \"\";height: 40px;width: 40px;left: 5px;bottom: 5px;background-color: white;-webkit-transition: .4s;transition: .4s;border-radius: 50%;}");
             client.println(".slider2 {position: absolute;content: \"\";height: 40px;width: 40px;left: 55px;bottom: 5px;background-color: white;-webkit-transition: .4s;transition: .4s;border-radius: 50%;}");
-            //client.println(".fix{width:200px;height:200px;position:fixed;bottom:-70px;right:-70px}");
             client.println("</style></head>");
 
             // Web Page Heading
@@ -122,9 +121,7 @@ void loop(){
             else {
               client.println("<p><a href=\"/27/off\"><label class=\"button4\"><span class=\"slider2\"></span></label></a></p>");
             }
-            client.println("</body>");
-            //client.println("<img src=\"https://i.pinimg.com/originals/e4/2c/ce/e42cce6e492be5a2c6d10beb5f37280c.gif\" class=\"fix\"/>");
-            client.println("</html>");
+            client.println("</body></html>");
             
             // The HTTP response ends with another blank line
             client.println();
