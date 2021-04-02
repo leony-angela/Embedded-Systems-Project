@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <style>
+    body {
+    text-align:center;
+	margin: 0;
+	background: linear-gradient(45deg, #576889, #6AABAD);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+    h1 {
+      font-family: OSWALD, sans-serif;
+      color: white;
+      padding : 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width:45%;
+      margin-left:auto;
+      margin-right:auto;
+      border-style: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,1.1);
+    }
+    th {
+      padding: 12px;
+      color: white;
+      background-color: #2C3969;
+    }
+    tr {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+    tr:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+    td {
+      padding: 15px;
+	  background-color: rgba(255,255,255,0.2);
+	  color: white;
+      
+    }
+    .sensor {
+      color:white;
+      font-weight: bold;
+      padding: 10px;
+      text-align : center;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>ESP32 with BME280</h1>
+  <div class="container">
+  <table>
+    <tr>
+      <th>MEASUREMENT</th>
+      <th>VALUE</th>
+    </tr>
+    <tr>
+      <td>Temp. Celsius</td>
+      <td><span class="sensor">--- *C</span></td></tr>
+    <tr>
+      <td>Temp. Fahrenheit</td>
+      <td><span class="sensor">--- *F</span></td>
+    </tr>
+    <tr>
+      <td>Pressure</td>
+      <td><span class="sensor">--- hPa</span></td>
+    </tr>
+    <tr>
+      <td>Approx. Altitude</td>
+      <td><span class="sensor">--- m</span></td>
+    </tr>
+    </table>
+  </div>
+</body>
+</html>
